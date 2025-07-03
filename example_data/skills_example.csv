@@ -1,0 +1,11 @@
+skill_name,category,proficiency_level,years_of_experience
+Python,language,4,3
+JavaScript,language,3,2
+React,framework,3,2
+Django,framework,4,3
+PostgreSQL,tool,3,2
+Docker,tool,2,1
+Project Management,soft,4,5
+Communication,soft,5,6
+Machine Learning,technical,2,1
+Data Analysis,technical,3,2 

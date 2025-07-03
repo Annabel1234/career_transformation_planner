@@ -1,0 +1,49 @@
+{
+  "user_profiles": [
+    {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "email": "sarah.johnson@example.com",
+      "google_id": "google_123456789012345678901",
+      "name": "Sarah Johnson",
+      "picture_url": "https://example.com/profiles/sarah_johnson.jpg",
+      "age": 29,
+      "gender": "Female",
+      "title": "Senior Marketing Manager",
+      "education": "MBA in Marketing, Bachelor's in Business Administration",
+      "years_experience": 7,
+      "income_level": "80000-120000",
+      "last_career_change": "2022-03-15",
+      "summary": "Experienced marketing professional with expertise in digital campaigns, brand management, and team leadership. Passionate about data-driven marketing strategies and customer experience optimization. Based in Seattle, WA. Married with two young children (ages 4 and 7). Prefers warm, encouraging communication with practical examples. Values work-life balance and tends to work best with structured, step-by-step guidance. Has a morning routine that includes meditation and prefers solutions that can be implemented during commute time or lunch breaks. Appreciates visual aids and actionable takeaways.",
+      "personality_traits": {
+        "openness": 8.2,
+        "conscientiousness": 9.1,
+        "extraversion": 7.5,
+        "agreeableness": 8.7,
+        "neuroticism": 3.2,
+        "leadership_style": "collaborative",
+        "communication_preference": "direct",
+        "decision_making": "analytical"
+      },
+      "motivators": [
+        "career_advancement",
+        "skill_development",
+        "work_life_balance",
+        "team_leadership",
+        "creative_challenges"
+      ],
+      "work_style": {
+        "preferred_environment": "hybrid",
+        "peak_productivity_hours": "morning",
+        "collaboration_preference": "team_oriented",
+        "feedback_style": "frequent_constructive",
+        "goal_setting_approach": "SMART_goals",
+        "stress_management": "time_blocking"
+      },
+      "user_type": "elevator",
+      "onboarding_completed": true,
+      "created_at": "2024-01-15T09:30:00Z",
+      "updated_at": "2024-05-20T14:22:00Z"
+    }
+  ],
+  "user_prompt": "I want to transition into an AI Product Manager role within the next 3 months. I have strong marketing and team leadership experience but need to build technical AI/ML knowledge and product management skills."
+} 
