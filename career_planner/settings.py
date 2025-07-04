@@ -171,6 +171,117 @@ AI_PLANNING_CONFIG = {
     'temperature': 0.7,
     'system_prompt': """You are an advanced AI planning expert. Given user input, generate a detailed, structured, and actionable plan. Your response must be in pure JSON format with the exact structure shown below.
 
+Here are examples to guide your responses:
+
+EXAMPLE INPUT:
+{
+  "user_profiles": [
+    {
+      "name": "Sarah Johnson",
+      "age": 29,
+      "gender": "Female",
+      "title": "Senior Marketing Manager",
+      "education": "MBA in Marketing, Bachelor's in Business Administration",
+      "years_experience": 7,
+      "income_level": "80000-120000",
+      "last_career_change": "2022-03-15",
+      "summary": "Experienced marketing professional with expertise in digital campaigns, brand management, and team leadership. Passionate about data-driven marketing strategies and customer experience optimization. Based in Seattle, WA. Married with two young children (ages 4 and 7). Prefers warm, encouraging communication with practical examples. Values work-life balance and tends to work best with structured, step-by-step guidance. Has a morning routine that includes meditation and prefers solutions that can be implemented during commute time or lunch breaks. Appreciates visual aids and actionable takeaways.",
+      "personality_traits": {
+        "openness": 8.2,
+        "conscientiousness": 9.1,
+        "extraversion": 7.5,
+        "agreeableness": 8.7,
+        "neuroticism": 3.2,
+        "leadership_style": "collaborative",
+        "communication_preference": "direct",
+        "decision_making": "analytical"
+      },
+      "motivators": [
+        "career_advancement",
+        "skill_development",
+        "work_life_balance",
+        "team_leadership",
+        "creative_challenges"
+      ],
+      "work_style": {
+        "preferred_environment": "hybrid",
+        "peak_productivity_hours": "morning",
+        "collaboration_preference": "team_oriented",
+        "feedback_style": "frequent_constructive",
+        "goal_setting_approach": "SMART_goals",
+        "stress_management": "time_blocking"
+      },
+      "user_type": "elevator"
+    }
+  ],
+  "user_prompt": "I want to transition into an AI Product Manager role within the next 3 months. I have strong marketing and team leadership experience but need to build technical AI/ML knowledge and product management skills."
+}
+
+EXAMPLE OUTPUT:
+{
+  "goal_id": "sarah.johnson@example.com",
+  "plan_description": "Career transformation plan for Sarah Johnson to transition into an AI Product Manager role within the next 3 months by building technical AI/ML knowledge and product management skills.",
+  "blockers": [],
+  "milestones": [
+    {
+      "milestone_order": 1,
+      "title": "Complete AI Fundamentals Course",
+      "description": "Finish an online course covering basics of AI and ML",
+      "target_date": "2025-09-15"
+    },
+    {
+      "milestone_order": 2,
+      "title": "Enroll in Product Management Certification",
+      "description": "Register for a certification program focused on product management",
+      "target_date": "2025-10-15"
+    },
+    {
+      "milestone_order": 3,
+      "title": "Apply AI/ML Knowledge to Marketing Projects",
+      "description": "Implement AI/ML concepts in current marketing campaigns",
+      "target_date": "2025-11-15"
+    },
+    {
+      "milestone_order": 4,
+      "title": "Lead a Cross-Functional AI Project",
+      "description": "Take the lead on an AI project involving multiple teams",
+      "target_date": "2025-12-15"
+    }
+  ],
+  "weekly_plans": [
+    {
+      "week_number": 1,
+      "year": 2025,
+      "week_start_date": "2025-09-01",
+      "week_end_date": "2025-09-07",
+      "weekly_objective": "Start AI Fundamentals Course",
+      "focus_areas": [
+        "AI Basics",
+        "Machine Learning Concepts",
+        "Data Analysis",
+        "Online Learning Resources",
+        "Study Schedule Planning"
+      ],
+      "weekly_time_commitment": 480
+    },
+    {
+      "week_number": 2,
+      "year": 2025,
+      "week_start_date": "2025-09-08",
+      "week_end_date": "2025-09-14",
+      "weekly_objective": "Complete Module 1 & 2 of AI Course",
+      "focus_areas": [
+        "Neural Networks",
+        "Deep Learning",
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Practical Exercises"
+      ],
+      "weekly_time_commitment": 480
+    }
+  ]
+}
+
 REQUIRED JSON STRUCTURE:
 {
   "goal_id": "use the user's email or a UUID",
@@ -205,7 +316,8 @@ Key Requirements:
 5. Ensure all dates are properly formatted (YYYY-MM-DD)
 6. Return only valid JSON without any markdown formatting
 7. Base the plan on the user's current situation, goals, and constraints
-8. Use the user's email as goal_id or generate a UUID""",
+8. Use the user's email as goal_id or generate a UUID
+9. Follow the example format and quality shown above""",
 }
 
 # Default primary key field type
