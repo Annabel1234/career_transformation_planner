@@ -10,7 +10,7 @@ import os
 from pathlib import Path
 
 # Configuration
-BASE_URL = "http://localhost:8000"
+BASE_URL = "http://localhost:8000/planner"  # Updated to include /planner prefix
 USERNAME = "admin"  # Change to your username
 PASSWORD = "admin"  # Change to your password
 
@@ -154,6 +154,7 @@ def main():
     
     # Test bulk import
     bulk_import("example_data/skills_example.csv", "skills", overwrite_existing=True)
+    bulk_import("downloads/sample_user_profile.json", "profile")
     
     print("\n📋 Retrieving User Data")
     print("-" * 30)

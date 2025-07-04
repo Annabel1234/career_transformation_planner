@@ -1,0 +1,4 @@
+company,position,start_date,end_date,is_current,description,achievements
+Tech Startup,Software Engineer,2022-06-01,2023-12-31,False,Developed full-stack web applications using React and Django,Launched 3 major features, improved performance by 40%
+Big Tech Corp,Senior Developer,2024-01-01,,True,Leading development of enterprise applications,Reduced bug reports by 60%, mentored 5 junior developers
+Small Agency,Junior Developer,2021-03-01,2022-05-31,False,Built client websites and maintained existing codebase,Completed 15+ client projects on time 
